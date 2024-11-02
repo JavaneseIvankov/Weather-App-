@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather App</title>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<div class="container">
+   <div class="query">
+      <input type="text" placeholder="Enter city name here" />
+      <button type="image" id="submit">
+         <i class='bx bx-search'></i>
+      </button>
+   </div>
+   <div class="main-container">
+      <div class="info">
+         <i class="bx bxs-error" id="errorImage"></i>
+         <h2 text-align="center">Error, please enter a valid name</h2>
+      </div>
+      <div class="main-weather">
+         <img src="https://openweathermap.org/img/wn/50d@4x.png" alt="" id="weather-img">
+         <p id="temp"></p>
+         <p id="city"></p>
+         <p id="weather-desc"></p>
+      </div>
+      <div class="sub-weather">
+         <div class="wind">
+            <i class='bx bx-wind'></i>
+            <p id="wind-desc"></p>
+         </div>
+         <div class="humidity">
+            <i class='bx bxs-droplet'></i>
+            <p id="humidity-desc"></p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
